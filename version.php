@@ -29,4 +29,4 @@ $plugin->requires  = 2013111800;
 $plugin->cron      = 0;
 $plugin->component = 'quizaccess_reattemptchecker';
 $plugin->maturity  = MATURITY_STABLE;
-$plugin->release   = 'v1.0 for Moodle 2.6, 2.7, 2.8, 2.9';
+$plugin->release   = 'v1.1 for Moodle 2.6, 2.7, 2.8, 2.9';

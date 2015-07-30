@@ -85,7 +85,7 @@ class quizaccess_reattemptchecker extends quiz_access_rule_base {
                 "quiz = :quizid AND userid = :userid AND timefinish > 0 and preview != 1",
                 array('quizid' => $this->quiz->id, 'userid' => $lastattempt->userid));
 
-        if (quiz_rescale_grade(quiz_calculate_best_grade($this->quiz, $previousattempts), , $this->quiz, false)
+        if (quiz_rescale_grade(quiz_calculate_best_grade($this->quiz, $previousattempts), $this->quiz, false)
                 >= $this->quiz->reattemptchecker) {
             return get_string('accessprevented', 'quizaccess_reattemptchecker');
         }
